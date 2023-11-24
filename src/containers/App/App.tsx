@@ -7,7 +7,7 @@ import {ABOUT_PAGE, CONTACT_PAGE, GIR_URL, HOME_PAGE, NOT_FOUND_PAGE, REPOS_PAGE
 import {Owner, Repositories} from '../../types';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
-import Repos from '../Repos/Repos';
+import Portfolio from '../Portfolio/Portfolio';
 
 const App = () => {
   const [repositories, setRepositories] = useState<Repositories[]>([]);
@@ -35,8 +35,8 @@ const App = () => {
       <Header/>
       <div className="container mx-auto">
         <Routes>
-          <Route path={HOME_PAGE} element={(<Home repos={repositories}/>)}/>
-          <Route path={REPOS_PAGE} element={(<Repos repos={repositories}/>)}/>
+          <Route path={HOME_PAGE} element={(<Home/>)}/>
+          <Route path={REPOS_PAGE} element={(<Portfolio repos={repositories}/>)}/>
           <Route path={ABOUT_PAGE} element={(<About/>)}/>
           <Route path={CONTACT_PAGE} element={(<Contact/>)}/>
           <Route path={NOT_FOUND_PAGE} element={(<h1>Not found page</h1>)}/>

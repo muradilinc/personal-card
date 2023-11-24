@@ -3,14 +3,14 @@ import {ABOUT_PAGE, CONTACT_PAGE, HOME_PAGE, REPOS_PAGE} from '../../constanst/c
 
 const Header = () => {
   return (
-    <div className="bg-black text-white p-4">
+    <div className="bg-inherit text-white p-4">
       <div className="container mx-auto grid items-center grid-cols-3 gap-2">
         <div className="col-span-1">
-          <h1 className="text-3xl">
+          <h1 className="text-[25px]">
             <NavLink to='/'>Muradil inc</NavLink>
           </h1>
         </div>
-        <div className="col-span-2 text-2xl">
+        <div className="col-span-2 font-normal text-[18px]">
           <ul className="flex justify-end">
             <li className="mr-3"><NavLink className="nav-link" to={HOME_PAGE}>Home</NavLink></li>
             <li className="mr-3"><NavLink className="nav-link" to={REPOS_PAGE}>Repositories</NavLink></li>
