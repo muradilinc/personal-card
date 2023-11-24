@@ -1,0 +1,1 @@
+export const GIR_URL = 'https://api.github.com/search/users?q=muradilinc';
