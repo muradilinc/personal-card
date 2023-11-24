@@ -1,10 +1,10 @@
 import {useEffect, useState} from 'react';
-import Header from '../../components/Header/Header';
 import {Route, Routes} from 'react-router-dom';
-import Home from '../Home/Home';
 import axios from 'axios';
 import {ABOUT_PAGE, CONTACT_PAGE, GIR_URL, HOME_PAGE, NOT_FOUND_PAGE, REPOS_PAGE} from '../../constanst/contanst';
 import {Owner, Repositories} from '../../types';
+import Header from '../../components/Header/Header';
+import Home from '../Home/Home';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Portfolio from '../Portfolio/Portfolio';
@@ -21,7 +21,7 @@ const App = () => {
       }));
       setRepositories(repositories[0]);
     } catch (error) {
-      console.log(error);
+      alert('Error! ' + error);
     }
   };
 
@@ -29,7 +29,6 @@ const App = () => {
     void fetchRepositories();
   }, []);
 
-  console.log(repositories);
   return (
     <div>
       <Header/>

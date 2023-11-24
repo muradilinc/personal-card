@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from '../../components/Card/Card';
 import {Repositories} from '../../types';
+import Card from '../../components/Card/Card';
 
 interface Props {
   repos: Repositories[];
