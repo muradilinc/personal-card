@@ -10,5 +10,5 @@ export interface Repositories {
   html_url: string;
   homepage?: string;
   created_at: string;
-  owner: Owner[];
+  owner: Owner;
 }

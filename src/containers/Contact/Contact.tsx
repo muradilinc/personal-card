@@ -1,4 +1,4 @@
-import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -11,7 +11,7 @@ const Contact = () => {
         <p className="text-sm font-normal text-gray-500 dark:text-gray-400">Text me!</p>
         <ul className="my-4 space-y-3">
           <li>
-            <a href="#"
+            <Link target='_blank' to='https://t.me/muradil_dev'
                className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
               <svg className="h-8" id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg"
                    viewBox="0 0 240 240">
@@ -34,10 +34,10 @@ const Contact = () => {
               <span className="flex-1 ms-3 whitespace-nowrap">Telegram</span>
               <span
                 className="inline-flex items-center justify-center px-2 py-0.5 ms-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#"
+            <Link target='_blank' to="mailto:muradil.koychubekob@gmail.com"
                className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
               <svg className="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66">
                 <path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/>
@@ -47,23 +47,7 @@ const Contact = () => {
                 <path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/>
               </svg>
               <span className="flex-1 ms-3 whitespace-nowrap">Gmail</span>
-            </a>
-          </li>
-          <li>
-            <a href="#"
-               className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-              <svg className="h-8" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
-                    fill="#007EBB"/>
-                  <path
-                    d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
-                    fill="#FFF"/>
-                </g>
-              </svg>
-              <span className="flex-1 ms-3 whitespace-nowrap">Linkedin</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

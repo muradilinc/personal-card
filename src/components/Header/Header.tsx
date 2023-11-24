@@ -1,4 +1,5 @@
 import {NavLink} from 'react-router-dom';
+import {ABOUT_PAGE, CONTACT_PAGE, HOME_PAGE, REPOS_PAGE} from '../../constanst/contanst';
 
 const Header = () => {
   return (
@@ -11,9 +12,10 @@ const Header = () => {
         </div>
         <div className="col-span-2 text-2xl">
           <ul className="flex justify-end">
-            <li className="mr-3"><NavLink className="nav-link" to='/'>Home</NavLink></li>
-            <li className="mr-3"><NavLink className="nav-link" to='/about-me'>About me</NavLink></li>
-            <li><NavLink className="nav-link" to='/contact-me'>Contact me</NavLink></li>
+            <li className="mr-3"><NavLink className="nav-link" to={HOME_PAGE}>Home</NavLink></li>
+            <li className="mr-3"><NavLink className="nav-link" to={REPOS_PAGE}>Repositories</NavLink></li>
+            <li className="mr-3"><NavLink className="nav-link" to={ABOUT_PAGE}>About me</NavLink></li>
+            <li><NavLink className="nav-link" to={CONTACT_PAGE}>Contact me</NavLink></li>
           </ul>
         </div>
       </div>

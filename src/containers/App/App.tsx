@@ -3,10 +3,11 @@ import Header from '../../components/Header/Header';
 import {Route, Routes} from 'react-router-dom';
 import Home from '../Home/Home';
 import axios from 'axios';
-import {GIR_URL} from '../../constanst/contanst';
+import {ABOUT_PAGE, CONTACT_PAGE, GIR_URL, HOME_PAGE, NOT_FOUND_PAGE, REPOS_PAGE} from '../../constanst/contanst';
 import {Owner, Repositories} from '../../types';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
+import Repos from '../Repos/Repos';
 
 const App = () => {
   const [repositories, setRepositories] = useState<Repositories[]>([]);
@@ -34,10 +35,11 @@ const App = () => {
       <Header/>
       <div className="container mx-auto">
         <Routes>
-          <Route path='/' element={(<Home repos={repositories}/>)}/>
-          <Route path='/about-me' element={(<About/>)}/>
-          <Route path='/contact-me' element={(<Contact/>)}/>
-          <Route path='*' element={(<h1>Not found page</h1>)}/>
+          <Route path={HOME_PAGE} element={(<Home repos={repositories}/>)}/>
+          <Route path={REPOS_PAGE} element={(<Repos repos={repositories}/>)}/>
+          <Route path={ABOUT_PAGE} element={(<About/>)}/>
+          <Route path={CONTACT_PAGE} element={(<Contact/>)}/>
+          <Route path={NOT_FOUND_PAGE} element={(<h1>Not found page</h1>)}/>
         </Routes>
       </div>
     </div>
