@@ -13,7 +13,8 @@ const Contact = () => {
           <li>
             <a href="#"
                className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-              <svg className="h-8" id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+              <svg className="h-8" id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg"
+                   viewBox="0 0 240 240">
                 <defs>
                   <linearGradient id="linear-gradient" x1="120" y1="240" x2="120" gradientUnits="userSpaceOnUse">
                     <stop offset="0" stop-color="#1d93d2"/>
@@ -38,14 +39,12 @@ const Contact = () => {
           <li>
             <a href="#"
                className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-              <svg aria-hidden="true" className="h-5" viewBox="0 0 292 292" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M145.7 291.66C226.146 291.66 291.36 226.446 291.36 146C291.36 65.5541 226.146 0.339844 145.7 0.339844C65.2542 0.339844 0.0400391 65.5541 0.0400391 146C0.0400391 226.446 65.2542 291.66 145.7 291.66Z"
-                  fill="#3259A5"/>
-                <path
-                  d="M195.94 155.5C191.49 179.08 170.8 196.91 145.93 196.91C117.81 196.91 95.0204 174.12 95.0204 146C95.0204 117.88 117.81 95.0897 145.93 95.0897C170.8 95.0897 191.49 112.93 195.94 136.5H247.31C242.52 84.7197 198.96 44.1797 145.93 44.1797C89.6904 44.1797 44.1104 89.7697 44.1104 146C44.1104 202.24 89.7004 247.82 145.93 247.82C198.96 247.82 242.52 207.28 247.31 155.5H195.94Z"
-                  fill="white"/>
+              <svg className="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66">
+                <path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/>
+                <path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/>
+                <path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/>
+                <path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92"/>
+                <path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/>
               </svg>
               <span className="flex-1 ms-3 whitespace-nowrap">Gmail</span>
             </a>
@@ -53,27 +52,14 @@ const Contact = () => {
           <li>
             <a href="#"
                className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-              <svg aria-hidden="true" className="h-5" viewBox="0 0 75.591 75.591" xmlns="http://www.w3.org/2000/svg">
-                <linearGradient id="a" gradientTransform="matrix(0 -54.944 -54.944 0 23.62 79.474)"
-                                gradientUnits="userSpaceOnUse" x2="1">
-                  <stop offset="0" stop-color="#ff1b2d"/>
-                  <stop offset=".3" stop-color="#ff1b2d"/>
-                  <stop offset=".614" stop-color="#ff1b2d"/>
-                  <stop offset="1" stop-color="#a70014"/>
-                </linearGradient>
-                <linearGradient id="b" gradientTransform="matrix(0 -48.595 -48.595 0 37.854 76.235)"
-                                gradientUnits="userSpaceOnUse" x2="1">
-                  <stop offset="0" stop-color="#9c0000"/>
-                  <stop offset=".7" stop-color="#ff4b4b"/>
-                  <stop offset="1" stop-color="#ff4b4b"/>
-                </linearGradient>
-                <g transform="matrix(1.3333 0 0 -1.3333 0 107.2)">
+              <svg className="h-8" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
                   <path
-                    d="m28.346 80.398c-15.655 0-28.346-12.691-28.346-28.346 0-15.202 11.968-27.609 26.996-28.313.44848-.02115.89766-.03314 1.3504-.03314 7.2574 0 13.876 2.7289 18.891 7.2137-3.3227-2.2036-7.2074-3.4715-11.359-3.4715-6.7504 0-12.796 3.3488-16.862 8.6297-3.1344 3.6999-5.1645 9.1691-5.3028 15.307v1.3349c.13821 6.1377 2.1683 11.608 5.302 15.307 4.0666 5.2809 10.112 8.6297 16.862 8.6297 4.1526 0 8.038-1.2679 11.361-3.4729-4.9904 4.4643-11.569 7.1876-18.786 7.2144-.03596 0-.07122.0014-.10718.0014z"
-                    fill="url(#a)"/>
+                    d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                    fill="#007EBB"/>
                   <path
-                    d="m19.016 68.025c2.6013 3.0709 5.9607 4.9227 9.631 4.9227 8.2524 0 14.941-9.356 14.941-20.897s-6.6891-20.897-14.941-20.897c-3.6703 0-7.0297 1.851-9.6303 4.922 4.0659-5.2809 10.111-8.6297 16.862-8.6297 4.1519 0 8.0366 1.2679 11.359 3.4715 5.802 5.1906 9.4554 12.735 9.4554 21.133 0 8.397-3.6527 15.941-9.4533 21.131-3.3234 2.205-7.2088 3.4729-11.361 3.4729-6.7504 0-12.796-3.3488-16.862-8.6297"
-                    fill="url(#b)"/>
+                    d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
+                    fill="#FFF"/>
                 </g>
               </svg>
               <span className="flex-1 ms-3 whitespace-nowrap">Linkedin</span>
