@@ -10,5 +10,3 @@ export const parseDate = (date: string) => {
 
   return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 };
-
-//joe joe
